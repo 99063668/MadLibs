@@ -5,7 +5,7 @@ body{
 .container{
     margin: auto;
     background-color: white;
-    width: 60%;
+    width: 40%;
     border: 3px solid #ffffff;
     padding: 0px;
     margin: 0;
@@ -27,7 +27,7 @@ nav ul{
 }
 
 nav ul li a{
-    color: aliceblue;
+    color: white;
     font-size: 18px;
     text-decoration: none;
     line-height: 32px;
@@ -35,8 +35,12 @@ nav ul li a{
 }
 
 footer{
-    background-color:  rgb(65, 64, 64);
+    background-color: rgb(65, 64, 64);
     color: white;
     padding: 10px 18px;
     text-align: center;
+}
+
+input{
+    float: right;
 }
