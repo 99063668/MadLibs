@@ -8,7 +8,7 @@
         $Input6 = $_POST["Input6"];
         $Input7 = $_POST["Input7"];
 
-        echo "Er zijn veel mensen die niet kunnen $Input1 Neem nou $Input2 Zelfs met de hulp van een $Input4 of zelfs $Input3 kan $Input2 niet $Input1 Dat heeft niet te maken met een gebrek aan $Input5 maar met een te veel aan $Input6 Te veel $Input6 leidt tot $Input7 en dat is niet goed als je wilt $Input1 Helaas voor $Input2";
+        echo "Er zijn veel mensen die niet kunnen $Input1. Neem nou $Input2 Zelfs met de hulp van een $Input4 of zelfs $Input3 kan $Input2 niet $Input1. Dat heeft niet te maken met een gebrek aan $Input5 maar met een te veel aan $Input6. Te veel $Input6 leidt tot $Input7 en dat is niet goed als je wilt $Input1. Helaas voor $Input2";
     }
 ?>
 
@@ -24,7 +24,7 @@
 <div class="container">
     <nav>
         <ul>
-            <li><a href="MadLibs.php">Er heerst paniek...</a></li>
+            <li><a href="MadLibsP.php">Er heerst paniek...</a></li>
             <li><a href="MadLibs.php">Onkunde</a></li>
         </ul>
     </nav>
