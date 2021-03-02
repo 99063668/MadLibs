@@ -24,6 +24,7 @@ nav ul li{
 nav ul{
     background-color: rgb(168, 10, 10);
     padding: 15px 18px;
+    margin: 0px;
 }
 
 nav ul li a{
@@ -39,10 +40,16 @@ footer{
     color: white;
     padding: 5px 18px;
     text-align: center;
+    margin-top: 50px;
 }
 
 input{
     float: right;
+    margin-right: 10px;
+}
+
+p, h1{
+    margin-left: 10px;
 }
 
 .text{

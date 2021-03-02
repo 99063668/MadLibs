@@ -50,25 +50,25 @@
 
 
     <form action="" method="POST">
-    <h1> Er heerst paniek... </h1>
+        <h1> Er heerst paniek... </h1>
 
-    <p>Welk dier zou je nooit als huisdier willen hebben? <input type="text" required name="Input1"></p> 
+        <p  id="Text">Welk dier zou je nooit als huisdier willen hebben? <input type="text" required name="Input1"></p> 
 
-    <p>Wie is de belangrijkste persoon in je leven? <input type="text" required name="Input2"></p>
+        <p  id="Text">Wie is de belangrijkste persoon in je leven? <input type="text" required name="Input2"></p>
 
-    <p>In welk land zou je graag willen wonen? <input type="text" required name="Input3"></p>
+        <p  id="Text">In welk land zou je graag willen wonen? <input type="text" required name="Input3"></p>
 
-    <p>Wat doe je als je je verveelt? <input type="text" required name="Input4"></p>
+        <p  id="Text">Wat doe je als je je verveelt? <input type="text" required name="Input4"></p>
 
-    <p>Met welk speelgoed speelde je als kunt het meest? <input type="text" required name="Input5"></p>
+        <p  id="Text">Met welk speelgoed speelde je als kunt het meest? <input type="text" required name="Input5"></p>
 
-    <p>Bij welke docent spijbel je het liefst? <input type="text" required name="Input6"></p>
+        <p  id="Text">Bij welke docent spijbel je het liefst? <input type="text" required name="Input6"></p>
 
-    <p>Als je €100.000 had wat zou je dan kopen? <input type="text" required name="Input7"></p>
+        <p  id="Text">Als je €100.000 had wat zou je dan kopen? <input type="text" required name="Input7"></p>
 
-    <p>Wat is je favoriete bezigheid? <input type="text" required name="Input8"></p>
+        <p  id="Text">Wat is je favoriete bezigheid? <input type="text" required name="Input8"></p>
 
-    <input type="submit" name="submit" value="Versturen">
+        <input type="submit" name="submit" value="Versturen">
     </form>
 
     <footer>
@@ -76,6 +76,7 @@
     </footer>
 </div>
 
+<script src="MadLibs.js"></script>
  </body>
 </html>
 

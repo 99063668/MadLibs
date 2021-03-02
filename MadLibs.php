@@ -34,29 +34,31 @@
     ?>
 
     <form action="" method="POST">
-    <h1> Onkunde </h1>
+        <h1> Onkunde </h1>
 
-    <p>Wat zou je graag willen kunnen? <input type="text" required name="Input1"></p> 
+        <p id="Text">Wat zou je graag willen kunnen? <input type="text" required name="Input1"></p> 
 
-    <p>Met welke persoon kun je goed opschieten? <input type="text" required name="Input2"></p>
+        <p  id="Text">Met welke persoon kun je goed opschieten? <input type="text" required name="Input2"></p>
 
-    <p>Wat is je favoriete getal? <input type="text" required name="Input3"></p>
+        <p  id="Text">Wat is je favoriete getal? <input type="text" required name="Input3"></p>
 
-    <p>Wat heb je altijd bij je als je op vakantie gaat? <input type="text" required name="Input4"></p>
+        <p  id="Text">Wat heb je altijd bij je als je op vakantie gaat? <input type="text" required name="Input4"></p>
 
-    <p>Wat is je beste persoonlijke eigenschap? <input type="text" required name="Input5"></p>
+        <p  id="Text">Wat is je beste persoonlijke eigenschap? <input type="text" required name="Input5"></p>
 
-    <p>Wat is je slechtste persoonlijke eigenschap? <input type="text" required name="Input6"></p>
+        <p  id="Text">Wat is je slechtste persoonlijke eigenschap? <input type="text" required name="Input6"></p>
 
-    <p>Wat is het ergste dat je kan overkomen? <input type="text" required name="Input7"></p>
+        <p  id="Text">Wat is het ergste dat je kan overkomen? <input type="text" required name="Input7"></p>
 
-    <input type="submit" name="submit" value="Versturen">
+        <input id="Submit" type="submit" name="submit" value="Versturen">
     </form>
 
     <footer>
        <p> Deze website is gemaakt door Dewi van der Velden @2021.</p>
     </footer>
 </div>
+
+<script src="MadLibs.js"></script>
 
  </body>
 </html>
