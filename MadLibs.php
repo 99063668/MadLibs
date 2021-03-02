@@ -19,7 +19,7 @@
 
     <form action="" method="POST">
         <h1> Onkunde </h1>
-
+    
         <?php
             if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $Input1 = $_POST["Input1"];
@@ -33,33 +33,32 @@
                 echo "Er zijn veel mensen die niet kunnen $Input1. Neem nou $Input2 Zelfs met de hulp van een $Input4 of zelfs
                 $Input3 kan $Input2 niet $Input1. Dat heeft niet te maken met een gebrek aan $Input5 maar met een te veel aan $Input6. 
                 Te veel $Input6 leidt tot $Input7 en dat is niet goed als je wilt $Input1. Helaas voor $Input2";
-            }
+            
         ?>
 
-        <p id="Text">Wat zou je graag willen kunnen? <input type="text" required name="Input1"></p> 
+        <?php }else{ ?>
+        <p>Wat zou je graag willen kunnen? <input type="text" required name="Input1" placeholder="Vul hier uw antwoord in.."></p> 
 
-        <p  id="Text">Met welke persoon kun je goed opschieten? <input type="text" required name="Input2"></p>
+        <p>Met welke persoon kun je goed opschieten? <input type="text" required name="Input2" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat is je favoriete getal? <input type="text" required name="Input3"></p>
+        <p>Wat is je favoriete getal? <input type="text" required name="Input3" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat heb je altijd bij je als je op vakantie gaat? <input type="text" required name="Input4"></p>
+        <p>Wat heb je altijd bij je als je op vakantie gaat? <input type="text" required name="Input4" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat is je beste persoonlijke eigenschap? <input type="text" required name="Input5"></p>
+        <p>Wat is je beste persoonlijke eigenschap? <input type="text" required name="Input5" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat is je slechtste persoonlijke eigenschap? <input type="text" required name="Input6"></p>
+        <p>Wat is je slechtste persoonlijke eigenschap? <input type="text" required name="Input6" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat is het ergste dat je kan overkomen? <input type="text" required name="Input7"></p>
+        <p>Wat is het ergste dat je kan overkomen? <input type="text" required name="Input7" placeholder="Vul hier uw antwoord in.."></p>
 
-        <input id="Submit" type="submit" name="submit" value="Versturen">
+        <input type="submit" name="submit" value="Versturen">
     </form>
+    <?php } ?>
 
     <footer>
        <p> Deze website is gemaakt door Dewi van der Velden @2021.</p>
     </footer>
 </div>
-
-<script src="MadLibs.js"></script>
-
  </body>
 </html>
 

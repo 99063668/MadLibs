@@ -48,34 +48,34 @@
                 echo "<br> $Input2, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had.";
                 echo "<br>";
                 echo "<br> $Input4, Sire.";
-            }
+            
         ?>
 
-        <p  id="Text">Welk dier zou je nooit als huisdier willen hebben? <input type="text" required name="Input1"></p> 
+        <?php }else{ ?>
+        <p>Welk dier zou je nooit als huisdier willen hebben? <input type="text" required name="Input1" placeholder="Vul hier uw antwoord in.."></p> 
 
-        <p  id="Text">Wie is de belangrijkste persoon in je leven? <input type="text" required name="Input2"></p>
+        <p>Wie is de belangrijkste persoon in je leven? <input type="text" required name="Input2" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">In welk land zou je graag willen wonen? <input type="text" required name="Input3"></p>
+        <p>In welk land zou je graag willen wonen? <input type="text" required name="Input3" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat doe je als je je verveelt? <input type="text" required name="Input4"></p>
+        <p>Wat doe je als je je verveelt? <input type="text" required name="Input4" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Met welk speelgoed speelde je als kunt het meest? <input type="text" required name="Input5"></p>
+        <p>Met welk speelgoed speelde je als kunt het meest? <input type="text" required name="Input5" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Bij welke docent spijbel je het liefst? <input type="text" required name="Input6"></p>
+        <p>Bij welke docent spijbel je het liefst? <input type="text" required name="Input6" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Als je €100.000 had wat zou je dan kopen? <input type="text" required name="Input7"></p>
+        <p>Als je €100.000 had wat zou je dan kopen? <input type="text" required name="Input7" placeholder="Vul hier uw antwoord in.."></p>
 
-        <p  id="Text">Wat is je favoriete bezigheid? <input type="text" required name="Input8"></p>
+        <p>Wat is je favoriete bezigheid? <input type="text" required name="Input8" placeholder="Vul hier uw antwoord in.."></p>
 
         <input type="submit" name="submit" value="Versturen">
     </form>
+    <?php } ?>
 
     <footer>
        <p> Deze website is gemaakt door Dewi van der Velden @2021.</p>
     </footer>
 </div>
-
-<script src="MadLibs.js"></script>
  </body>
 </html>
 
