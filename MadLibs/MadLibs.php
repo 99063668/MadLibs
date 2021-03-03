@@ -1,3 +1,81 @@
+<?php
+$Input1 = $Input2 = $Input3 = $Input4 = $Input5 = $Input6 = $Input7 = "";
+$Input1Err = $Input2Err = $Input3Err = $Input4Err = $Input5Err = $Input6Err = $Input7Err = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if(empty($_POST["Input1"])){
+    $Input1Err = "Vul iets in.";
+  }else{
+    $Input1 = test_input($_POST["Input1"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input1)){
+      $Input1Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input2"])){
+    $Input3Err = "Vul iets in.";
+  }else{
+    $Input2 = test_input($_POST["Input2"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input2)){
+      $Input2Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input3"])){
+    $Input3Err = "Vul iets in.";
+  }else{
+    $Input3 = test_input($_POST["Input3"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input3)){
+      $Input3Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input4"])){
+    $Input4Err = "Vul iets in.";
+  }else{
+    $Input4 = test_input($_POST["Input4"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input4)){
+      $Input4Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input5"])){
+    $Input5Err = "Vul iets in.";
+  }else{
+    $Input5 = test_input($_POST["Input5"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input5)){
+      $Input5Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input6"])){
+    $Input6Err = "Vul iets in.";
+  }else{
+    $Input6 = test_input($_POST["Input6"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input6)){
+      $Input6Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+
+  if(empty($_POST["Input7"])){
+    $Input7Err = "Vul iets in.";
+  }else{
+    $Input7 = test_input($_POST["Input7"]);
+    if(!preg_match("/[^a-z0-9 _]+$/i", $Input7)){
+      $Input7Err = "Alleen letters en spaties zijn toegestaan.";
+    }
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -17,7 +95,7 @@
         </ul>
     </nav>
 
-    <form action="" method="POST">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
         <h1> Onkunde </h1>
     
         <?php
@@ -38,6 +116,7 @@
 
         <?php }else{ ?>
         <p>Wat zou je graag willen kunnen? <input type="text" required name="Input1" placeholder="Vul hier uw antwoord in.."></p> 
+        <!--<span class="error">*<?php echo $Input1Err;?></span>-->
 
         <p>Met welke persoon kun je goed opschieten? <input type="text" required name="Input2" placeholder="Vul hier uw antwoord in.."></p>
 
